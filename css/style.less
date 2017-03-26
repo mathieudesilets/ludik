@@ -46,3 +46,126 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+//==========================================================================================
+
+/* Variables */
+@smartphones: ~"only screen and (max-width: 1024px)";
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'kirvybold';
+    src: url('../fonts/kirvy-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kirvy-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kirvyregular';
+    src: url('../fonts/kirvy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kirvy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*  Body  */
+
+.wrapper{
+	width:1024px;
+	margin: 0 auto;
+
+	@media @smartphones{
+		width:100%;
+	}
+}
+
+
+/*  Menu  */
+
+header{
+
+	div{
+
+		display: table;
+		margin: 0 auto;
+
+		ul{
+
+			.dropdown{
+
+				display: inline-block;
+
+				.dropbtn{
+					display: inline-block;
+				}
+
+				.dropdown-content {
+					display: none;
+				    position: absolute;
+				    background-color: #f9f9f9;
+				    min-width: 160px;
+			        margin-left: -5px;
+    				margin-top: 10px;
+				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				    z-index: 1;
+
+				    a{				    	
+    					text-decoration: none;
+    					display: block;
+    					font-family: 'kirvybold', Arial;
+    					padding: 14px 5px;
+    					font-size: 14px;
+    					letter-spacing: 2px;
+
+    					&:hover{
+    						background-color: #e0e0e0;
+    					}
+				    }
+				}
+
+				&:hover .dropdown-content {
+    				display: block;
+				}
+			
+			}	
+
+			li{
+
+				display: inline-block;
+				padding: 10px 5px;	
+
+				&:hover{
+					background-color: #e0e0e0;
+				}	    
+
+				a{
+					color: black;	
+					text-decoration: none;
+    				font-size: 14px;
+    				letter-spacing: 2px;
+					font-family: 'kirvybold', Arial;
+
+					&:hover{
+					}
+				}
+			}
+
+			.menu_spacer{
+				font-size: 25px;
+				font-weight: bold;
+
+				&:hover{
+					background-color: white;
+				}	
+			}
+		}	
+	}
+
+	
+
+}
