@@ -275,6 +275,45 @@ header div ul .menu_spacer:hover {
 #info_bar .section_social_media img {
   max-width: 30px;
 }
+section .section_logo_mobile {
+  display: none;
+  background-color: #f2e7d7;
+  height: 280px;
+  width: 29.5%;
+  min-width: 302px;
+  margin-right: 26px;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+@media only screen and (max-width: 1063px) {
+  section .section_logo_mobile {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  section .section_logo_mobile {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .section_logo_mobile {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+section .section_logo_mobile img {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  section .section_logo_mobile img {
+    width: 60%;
+  }
+}
 section #section_coiffure {
   width: 100%;
   height: 280px;
@@ -283,7 +322,6 @@ section #section_coiffure a {
   text-decoration: none;
 }
 section #section_coiffure .section_coiffure_femme {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-image: url(../images/image_coiffure_femme.jpg);
   height: 100%;
   width: 67.5%;
@@ -379,6 +417,263 @@ section .coiffure_title_section h1 {
 @media only screen and (max-width: 600px) {
   section .coiffure_title_section {
     top: -310px;
+  }
+}
+section #section_salon {
+  width: 100%;
+  height: 280px;
+  clear: both;
+  position: relative;
+  top: -13px;
+}
+section #section_salon a {
+  text-decoration: none;
+}
+section #section_salon .section_logo {
+  background-color: #f2e7d7;
+  height: 100%;
+  width: 29.5%;
+  min-width: 302px;
+  display: inline-block;
+  margin-right: 26px;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+@media only screen and (max-width: 1063px) {
+  section #section_salon .section_logo {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  section #section_salon .section_logo {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_salon .section_logo {
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
+  }
+}
+section #section_salon .section_logo img {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  section #section_salon .section_logo img {
+    width: 60%;
+  }
+}
+section #section_salon .section_salon {
+  background-image: url(../images/image_salon_ludik.jpg);
+  height: 100%;
+  width: 67.5%;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+@media only screen and (max-width: 1063px) {
+  section #section_salon .section_salon {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  section #section_salon .section_salon {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_salon .section_salon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+section #section_salon .section_salon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+section .salon_title_section {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: -244px;
+}
+section .salon_title_section h1 {
+  display: block;
+  font-family: 'kirvybold', Arial;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  float: right;
+  margin-right: 23%;
+}
+@media only screen and (max-width: 700px) {
+  section .salon_title_section h1 {
+    margin-right: 14%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .salon_title_section h1 {
+    margin-right: 36%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .salon_title_section {
+    top: -281px;
+  }
+}
+section #section_barbier {
+  width: 100%;
+  height: 280px;
+  clear: both;
+  position: relative;
+  top: -48px;
+}
+section #section_barbier a {
+  text-decoration: none;
+}
+section #section_barbier .section_photos {
+  background-image: url(../images/image_section_photos.jpg);
+  height: 100%;
+  width: 29.5%;
+  min-width: 302px;
+  display: inline-block;
+  margin-right: 26px;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+@media only screen and (max-width: 1063px) {
+  section #section_barbier .section_photos {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  section #section_barbier .section_photos {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_barbier .section_photos {
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/image_photos_mobile.jpg);
+    background-position: center;
+  }
+}
+section #section_barbier .section_photos:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+section #section_barbier .section_photos .photos_title_section {
+  width: 20%;
+  height: 40px;
+  position: absolute;
+}
+section #section_barbier .section_photos .photos_title_section h1 {
+  display: block;
+  font-family: 'kirvybold', Arial;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 700px) {
+  section #section_barbier .section_photos .photos_title_section h1 {
+    margin-right: 14%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_barbier .section_photos .photos_title_section h1 {
+    margin-right: 36%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_barbier .section_photos .photos_title_section {
+    top: 0px;
+    width: 100%;
+    position: relative;
+  }
+}
+section #section_barbier .section_barbier {
+  background-image: url(../images/image_barbier_ludik.jpg);
+  background-color: blue;
+  height: 100%;
+  width: 67.5%;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+@media only screen and (max-width: 1063px) {
+  section #section_barbier .section_barbier {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  section #section_barbier .section_barbier {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section #section_barbier .section_barbier {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+section #section_barbier .section_barbier:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+section .barbier_title_section {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: -244px;
+}
+section .barbier_title_section h1 {
+  display: block;
+  font-family: 'kirvybold', Arial;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  float: right;
+  margin-right: 23%;
+}
+@media only screen and (max-width: 700px) {
+  section .barbier_title_section h1 {
+    margin-right: 14%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .barbier_title_section h1 {
+    margin-right: 36%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .barbier_title_section {
+    top: -281px;
   }
 }
 
