@@ -128,7 +128,9 @@ header{
     						background-color: #e0e0e0;
     					}
 
-    					
+						@media only screen and (max-width: 700px){
+							font-size: 12px;
+						}
 				    }
 				}
 
@@ -157,9 +159,14 @@ header{
 					&:hover{
 					}
 
-					@media @smartphones{
-						padding: 14px 0px;
+					@media only screen and (max-width: 700px){
+							font-size: 10px;
 					}
+
+					@media @smartphones{
+						padding: 10px 0px;
+					}
+
 				}
 			}
 
@@ -254,6 +261,16 @@ header{
 }
 
 section{
+
+	background-image: url(../images/background_image_footer.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 50px;
+    background-size: contain;
+
+	@media only screen and (max-width: 700px){
+		background-image: none;
+	}    
 
 	.section_logo_mobile{
 			display: none;
@@ -525,7 +542,7 @@ section{
 		height:280px;
 		clear: both;
 		position: relative;
-		top: -48px;
+		top: -26px;
 
 		a{
 			text-decoration: none;
@@ -674,4 +691,248 @@ section{
 
 	}
 
+	#section_produits{
+		@media only screen and (max-width: 700px){
+			display: none;
+		}	
+	}
+
+
+	#section_produits_1{
+		clear: both;
+		position: relative;
+		top: -38px;
+		width: 101%;
+
+		a{
+			text-decoration: none;
+
+			.container{
+				display: inline-block;
+				width: 21.5%;
+				margin-right: 3%;			
+
+				div{
+					width:100%;
+					display: inline-block;
+					padding: 10px;
+					background-color: #f3f0ed;
+
+
+					img{
+						width: 85%;
+						display: block;
+						margin:0 auto;
+					}
+
+				}
+
+				.no-bg{
+					background-color: white;
+				}
+
+				
+			}
+
+			
+		}
+
+		
+
+	}
+
+
+	#section_produits_2{
+		clear: both;
+		position: relative;
+		top: -24px;
+		width: 101%;
+
+		a{
+			text-decoration: none;
+
+			.container{
+				display: inline-block;
+				width: 21.5%;
+				margin-right: 3%;				
+
+				div{
+					width:100%;
+					display: inline-block;
+					padding: 10px;
+					background-color: #f3f0ed;
+
+
+					img{
+						width: 85%;
+						display: block;
+						margin:0 auto;
+					}
+				}
+
+				.no-bg{
+					background-color: white;
+				}
+
+			}
+		}
+
+	}
+
+
+	#section_produits_3{
+		clear: both;
+		position: relative;
+		top: -9px;
+		width: 101%;
+
+		a{
+			text-decoration: none;
+
+			.container{
+				display: inline-block;
+				width: 21.5%;
+				margin-right: 3%;	
+
+
+
+				div{
+					width:100%;
+					display: inline-block;
+					padding: 10px;
+					background-color: #f3f0ed;
+
+
+					img{
+						width: 85%;
+						display: block;
+						margin:0 auto;
+					}
+
+				}
+
+				.no-bg{
+					background-color: transparent;
+				}
+
+			}
+		}
+
+	}
+
+	.containerLarge{
+				display: inline-block;
+				width: 46.5%;
+				margin-right: 3%;				
+
+				div{
+					width:100%;
+					display: inline-block;
+					padding: 10px;
+					background-color: #f3f0ed;
+
+
+					img{
+						width: 100%;
+						display: block;
+						margin:0 auto;
+					}
+				}
+
+				.no-bg{
+					background-color: white;
+				}
+
+			}
+
+
 }
+
+
+footer{
+
+	width: 100%;
+	clear: both;
+
+	#address_bar_footer{
+		background-color: #b3bbbe;
+		padding: 20px;
+
+		a{
+			text-decoration: none;
+			text-align: center;
+			width: 100%;
+			display: block;
+			font-size: 15px;	
+			position: relative;
+			top:-5px;		
+			font-family: kirvybold, arial;
+			color: #818285;
+
+			img{
+				max-width: 30px;
+				top:7px;
+				padding-left: 7px;
+				position: relative;
+			}
+
+			&:hover{
+				color:363636;
+			}
+		}
+	}
+
+	.logo_footer{
+
+		img{
+		    max-width: 20px;
+    		margin: 0 auto;
+    		display: block;
+    		padding: 20px;
+		}
+
+	}
+
+}
+
+
+
+/*===============================================================================*/
+
+#page_barbier{
+
+	div{
+		width: 49%;
+		background-color: red;
+		height: 50px;
+		display: inline-block;
+		background-image: url(../images/image_barbier_ludik_full.jpg);
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+
+	.barbier_title{
+		height: 50px;
+		background-color: #f0e7d8;
+		width: 49%;
+		display: inline-block;
+		background-image: none; 
+		float: right;
+
+		h1{
+			height: 400px;
+		}
+	}
+
+	.div_img_barbier{
+		clear: both;
+		width: 100%;
+		height: 400px;
+		background-image: url(../images/image_barbier_ludik_full.jpg);
+		background-repeat: no-repeat;
+    	background-size: cover;
+
+	}
+
+}
+
