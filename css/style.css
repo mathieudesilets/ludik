@@ -141,6 +141,9 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+.bold {
+  font-weight: bold;
+}
 /*  Body  */
 .wrapper {
   width: 1024px;
@@ -841,25 +844,44 @@ footer .logo_footer img {
   padding: 20px;
 }
 /*===============================================================================*/
-#page_barbier div {
+#page_barbier .wrapper_header_page_barbier {
+  height: 29%;
+  margin-bottom: 20px;
+}
+#page_barbier .wrapper_header_page_barbier div {
   width: 49%;
-  background-color: red;
-  height: 50px;
+  height: 100%;
   display: inline-block;
-  background-image: url(../images/image_barbier_ludik_full.jpg);
+  background-image: url(../images/Salon-Ludik--Lavabo.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#page_barbier .barbier_title {
-  height: 50px;
+@media only screen and (max-width: 600px) {
+  #page_barbier .wrapper_header_page_barbier div {
+    background-image: none;
+    display: none;
+  }
+}
+#page_barbier .wrapper_header_page_barbier .barbier_title {
+  height: 100%;
   background-color: #f0e7d8;
   width: 49%;
   display: inline-block;
   background-image: none;
   float: right;
 }
-#page_barbier .barbier_title h1 {
-  height: 400px;
+@media only screen and (max-width: 600px) {
+  #page_barbier .wrapper_header_page_barbier .barbier_title {
+    width: 100%;
+  }
+}
+#page_barbier .wrapper_header_page_barbier .barbier_title h1 {
+  width: 100%;
+  line-height: 245px;
+  text-align: center;
+  font-family: kirvybold, arial;
+  font-size: 1.5em;
 }
 #page_barbier .div_img_barbier {
   clear: both;
@@ -868,6 +890,21 @@ footer .logo_footer img {
   background-image: url(../images/image_barbier_ludik_full.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  #page_barbier .div_img_barbier {
+    background-image: none;
+    display: none;
+  }
+}
+#page_barbier .div_services {
+  background-color: #eff2e7;
+  margin-top: 20px;
+  padding: 30px;
+}
+#page_barbier .div_services p {
+  text-align: center;
+  font-family: kirvybold, arial;
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
