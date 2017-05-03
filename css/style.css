@@ -852,7 +852,7 @@ footer .logo_footer img {
   width: 49%;
   height: 100%;
   display: inline-block;
-  background-image: url(../images/Salon-Ludik--Lavabo.jpg);
+  background-image: url(../images/image_chaises_barbier_ludik.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -905,6 +905,80 @@ footer .logo_footer img {
 #page_barbier .div_services p {
   text-align: center;
   font-family: kirvybold, arial;
+}
+/*===============================================================================*/
+#page_coiffure_homme .wrapper_header_page_coiffure_homme {
+  height: 29%;
+  margin-bottom: 20px;
+}
+#page_coiffure_homme .wrapper_header_page_coiffure_homme div {
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+  background-image: url(../images/Salon-Ludik--Lavabo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  #page_coiffure_homme .wrapper_header_page_coiffure_homme div {
+    background-image: none;
+    display: none;
+  }
+}
+#page_coiffure_homme .wrapper_header_page_coiffure_homme .coiffure_homme_title {
+  height: 100%;
+  background-color: #f0e7d8;
+  width: 49%;
+  display: inline-block;
+  background-image: none;
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  #page_coiffure_homme .wrapper_header_page_coiffure_homme .coiffure_homme_title {
+    width: 100%;
+  }
+}
+#page_coiffure_homme .wrapper_header_page_coiffure_homme .coiffure_homme_title h1 {
+  width: 100%;
+  line-height: 38px;
+  text-align: center;
+  font-family: kirvybold, arial;
+  font-size: 1.5em;
+  margin-top: 20%;
+}
+#page_coiffure_homme .wrapper_header_page_coiffure_homme .coiffure_homme_title h1 .subtitle_titre_coiffure_homme {
+  font-size: 13px;
+}
+#page_coiffure_homme .div_img_coiffure_homme {
+  clear: both;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/image_coiffure_homme_full_page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  #page_coiffure_homme .div_img_coiffure_homme {
+    background-image: none;
+    display: none;
+  }
+}
+#page_coiffure_homme .div_img_coiffure_homme_2 {
+  clear: both;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/image_coiffure_homme_full_page_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  #page_coiffure_homme .div_img_coiffure_homme_2 {
+    background-image: none;
+    display: none;
+  }
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
