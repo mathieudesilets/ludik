@@ -62,7 +62,48 @@
 
 		<section>
 
-		contact
+			<div class="wrapper_info_page_contact">
+
+				<div class="div_heures_ouvertures">
+					<h1>HEURES D'OUVERTURE</h1>
+					<p>LUNDI - FERME</p><br>
+					<p>MARDI - 9AM - 6PM</p><br>
+					<p>MERCREDI - 9AM - 6PM</p><br>
+					<p>JEUDI - 9AM - 9PM</p><br>
+					<p>VENDREDI - 9AM - 9PM</p><br>
+					<p>SAMEDI - 9AM - 5PM</p><br>
+					<p>DIMANCHE - FERME</p><br>
+				</div>
+
+				<div class="div_addresse">
+					<h1>LUDIK COIFFURE</h1><br>
+					<p>520 BLV. SIR-WILFRID-LAURIER</p><br>
+					<p>BELOEIL</p><br>
+					<p>QC J3G 4H9</p><br>
+					<p>(450)527-1277</p><br>
+				</div>
+
+			</div>
+
+			<div class="google_maps_div">
+				<div id="map"></div>
+				<script>
+			      function initMap() {
+			        var ludik = {lat: 45.560899, lng: -73.209700};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 15,
+			          center: ludik
+			        });
+			        var marker = new google.maps.Marker({
+			          position: ludik,
+			          map: map
+			        });
+			      }
+			    </script>
+			    <script async defer
+			    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqTwGEW-or2d79GANKGj70IQKo5y8cjp8&callback=initMap">
+			    </script>
+			</div>
 			
 		</section>
 
