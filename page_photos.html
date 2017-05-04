@@ -1,8 +1,18 @@
 <html>
 <head>
 	<title>Ludik Coiffure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="scripts/instafeed.min.js"></script>
+	<script type="text/javascript">
+    var feed = new instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+	</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -62,8 +72,7 @@
 
 		<section>
 
-			photos
-
+			<div id="instafeed">Page en construction</div>
 
 		</section>
 

@@ -1157,6 +1157,11 @@ footer{
 		font-family: kirvyregular, arial;
 		min-height: 336px;
 		margin-bottom: 20px;
+
+		h1{
+			padding-top: 5%;
+			font-family: kirvybold, arial;
+		}
 	}
 
 	.div_addresse{
@@ -1168,6 +1173,11 @@ footer{
 		font-family: kirvyregular, arial;
 		min-height: 336px;
 		margin-bottom: 20px;
+
+		h1{
+			padding-top: 15%;
+			font-family: kirvybold, arial;
+		}
 	}
 
 }
@@ -1177,4 +1187,120 @@ footer{
 		height: 500px;
 		background-color: gray;
 		clear: both;
+}
+
+
+/*===============================================================================*/
+
+
+#page_salon{
+
+	.div_header_salon{
+
+		margin-bottom: 20px;
+
+		img{
+			width: 100%;
+		}
+		
+	}
+
+	.div_intro_salon{
+		background-color: #d6d5d3;
+		font-family: myriad, arial;
+		padding: 40px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.wrapper_div_salon{
+		overflow: auto;
+	}
+
+	.div_description_personnel_gauche{
+		clear: both;
+		background-color: #d6d5d3;
+		font-family: myriad, arial;
+		font-size: 14px;
+		line-height: 24px;
+		width: 49%;
+		float: left;
+		text-align: right;
+		margin: 20px 0;
+
+		h2{
+			padding: 40px 40px 0 0;
+			font-family: kirvybold, arial;
+
+			@media @tablet{
+				padding: 40px 0 0 0;
+			}
+		}
+
+		p{
+			padding: 40px;
+		}
+
+		@media @tablet{
+			width: 100%;
+			text-align: center;
+		}
+
+	}
+
+	.div_image_personnel_droite{
+		float: right;
+		overflow: hidden;
+		margin: 20px 0;
+		max-width: 49%;
+		max-height: 100%;
+
+		@media @tablet{
+			display: none;
+		}
+	}
+
+	.div_description_personnel_droite{
+		background-color: #d6d5d3;
+		font-family: myriad, arial;
+		font-size: 14px;
+		line-height: 24px;
+		width: 49%;
+		float: right;
+		text-align: left;
+		margin: 20px 0;
+
+		h2{
+			padding: 40px 0 0 40px;
+			font-family: kirvybold, arial;
+
+			@media @tablet{
+				padding: 40px 0 0 0;
+			}
+		}
+
+		p{
+			padding: 40px;
+		}
+
+		@media @tablet{
+			width: 100%;
+			text-align: center;
+		}
+
+	}
+
+	.div_image_personnel_gauche{
+		float: left;
+		overflow: hidden;
+		margin: 20px 0;
+		max-width: 49%;
+		max-height: 100%;
+
+		@media @tablet{
+			display: none;
+		}
+	}
+
+
 }
